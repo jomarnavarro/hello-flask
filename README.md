@@ -22,3 +22,15 @@ Next, you need to migrate the DB using the following command.
 Set the environment variable below to have the app access the local DB:
 
 `export DATABASE_URL=postgresql://root:test1234@localhost:5432/microblog`
+
+## Email logging
+
+The following environment variables must be set in the production server in order to get email notifications upon errors:
+
+* MAIL_SERVER
+* MAIL_PORT
+* MAIL_USE_TLS
+* MAIL_USERNAME
+* MAIL_PASSWORD
+
+Additionally, `config.py` must contain the list of admin emails to send emails to.
